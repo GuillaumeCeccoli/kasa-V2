@@ -1,0 +1,26 @@
+footer {
+  background-color: black;
+  width: 100%;
+  height: 209px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.footerimg {
+  margin-top: 60px;
+}
+
+.footertext {
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+  margin: 40px auto;
+}
+
+@media screen and (max-width: 768px) {
+  .footertext {
+    font-size: 12px;
+  }
+}
