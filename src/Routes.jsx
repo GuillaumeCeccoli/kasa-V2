@@ -9,6 +9,7 @@ export default function Router() {
   return (
     <Routes>
       <Route element={<Layout />}>
+        <Route index element={<Home />} />
         {/* On définit la page par défaut */}
         <Route index element={<Home />} />
 
