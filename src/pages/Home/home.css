@@ -1,0 +1,9 @@
+.cardLogement {
+  max-width: 86%;
+  border-radius: 25px;
+  background-color: #f7f7f7;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 60px;
+  margin: 40px 20px 20px 20px;
+}
