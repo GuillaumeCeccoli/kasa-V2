@@ -1,3 +1,4 @@
+import React from "react";
 import "./home.css";
 import Banner from "../../Components/Banner/Banner";
 import Card from "../../Components/Card/Card";
