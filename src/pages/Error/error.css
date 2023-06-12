@@ -1,0 +1,48 @@
+.errorContain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 200px auto;
+}
+
+.errorNumber {
+  font-size: 288px;
+  color: #ff6060;
+  font-weight: 700;
+  padding: 70px auto;
+}
+
+.errorText {
+  font-size: 36px;
+  color: #ff6060;
+  font-weight: 500;
+}
+
+.returnHome {
+  color: #ff6060;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 180px auto 160px auto;
+}
+
+@media screen and (max-width: 768px) {
+  .errorContain {
+    margin: 198px auto;
+  }
+  .errorNumber {
+    font-size: 96px;
+  }
+  .errorText {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 11px;
+  }
+  .errorText span {
+    display: block;
+  }
+  .returnHome {
+    font-size: 14px;
+    margin: 133px auto 50px auto;
+  }
+}
