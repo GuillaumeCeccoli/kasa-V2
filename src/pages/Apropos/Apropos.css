@@ -1,0 +1,26 @@
+.dropDownInfos {
+  max-width: 1023px;
+  font-weight: 500;
+  font-size: 24px;
+  margin: 35px auto 100px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropDownInfos .dropDown {
+  width: 100%;
+}
+
+/***** RESPONSIVE *****/
+
+@media screen and (max-width: 768px) {
+  .dropDownInfos {
+    width: 86%;
+  }
+  .dropDownInfos p {
+    font-size: 12px;
+  }
+  .dropDownInfos h2 {
+    font-size: 14px;
+  }
+}

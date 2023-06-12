@@ -1,0 +1,105 @@
+.dropDown {
+  margin: 20px 0px;
+  width: 47%;
+  position: relative;
+}
+
+.headingDrop {
+  height: 52px;
+  padding: 0 20px;
+  background-color: #ff6060;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.titleDrop {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.headingDrop img {
+  color: #ffffff;
+  position: absolute;
+  width: 24px;
+  height: 13px;
+  right: 18px;
+}
+
+.arrowOpen {
+  transform: rotate(0deg);
+  transition: transform 0.6s ease-in-out;
+}
+
+.arrowClose {
+  transform: rotate(180deg);
+  transition: transform 0.6s ease-in-out;
+}
+
+.dropDownContent {
+  color: #ff6060;
+  background-color: #f6f6f6;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 400;
+  position: relative;
+  border-radius: 10px;
+  z-index: -1;
+  box-sizing: border-box;
+}
+
+.dropDownContent.close {
+  height: 0px;
+  overflow: hidden;
+}
+
+.dropDownContent.open {
+  height: auto;
+}
+
+.dropDownText {
+  margin: -11px 20px 40px 20px;
+  padding-bottom: 20px;
+  padding-top: 15px;
+}
+
+.dropDownText p {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Responsive  */
+
+@media screen and (max-width: 768px) {
+  .dropDown {
+    margin: 10px auto;
+  }
+
+  .aboutBanner .banner {
+    height: 223px;
+  }
+
+  .aboutBanner img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .dropDownContent {
+    font-size: 12px;
+  }
+
+  .titleDrop {
+    font-size: 14px;
+  }
+
+  .headingDrop {
+    height: 30px;
+  }
+
+  .headingDrop img {
+    height: 9px;
+  }
+}
