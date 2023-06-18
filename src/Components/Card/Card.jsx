@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 export default function Card({ idCard, titleCard, imgCard }) {
   return (
     <div className="card">
-      <Link className="cardLink" to={idCard}>
+      <Link className="cardLink" to={"../Logement/" + idCard}>
         <img className="cardImg" src={imgCard} alt="Le logement" />
         <h2 className="cardTitle">{titleCard}</h2>
       </Link>
