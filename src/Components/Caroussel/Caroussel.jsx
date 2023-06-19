@@ -36,7 +36,7 @@ export default function Caroussel({ pictures }) {
       </div>
       <div className="right">
         <img
-          className={pictures.length !== 1 ? "right" : "hidden"}
+          className={pictures.length !== 1 ? "rightarrow" : "hidden"}
           src={rightArrow}
           alt="Fleche droite"
           onClick={next}

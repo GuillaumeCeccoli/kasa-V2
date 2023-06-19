@@ -20,7 +20,7 @@ export default function Logement() {
         setLoad(true);
       })
       .catch((error) => console.log(error));
-  }, []);
+  }, [id]);
 
   if (!load) {
     return <div>Chargement en cours</div>;
