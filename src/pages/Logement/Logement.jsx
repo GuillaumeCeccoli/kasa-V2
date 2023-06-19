@@ -43,44 +43,23 @@ export default function Logement() {
           })}
         </div>
         <div className="rate">
-          <div className="nameAndPicture">
-            <p>{logement.host.name}</p>
-            <img src={logement.host.picture} alt={logement.host.name} />
+          <div className="rateDetails">
+            <p className="rateText">{logement.host.name}</p>
+            <img
+              className="rateImg"
+              src={logement.host.picture}
+              alt={logement.host.name}
+            />
           </div>
           <div className="starsRating">
             <Rate numberOfStars={logement.rating} />
           </div>
         </div>
       </section>
-    </main>
-    /*     <main className="detailLogement">
-      <div className="carousselBanner">
-        <Caroussel pictures={logement.pictures} altTxt={logement.title} />
-      </div>
-      <div className="profileLogement">
-        <div className="profileDetailLogement">
-          <h2 className="profileTitle">{logement.title}</h2>
-          <p className="profileLocation">{logement.location}</p>
-          <div className="profileTagLogement">
-            {logement.tags.map((tag, id) => {
-              return <Tag tag={tag} key={id} />;
-            })}
-          </div>
-          <div className="rateLogement">
-            <div className="ratingNameLogement">
-              <p>{logement.host.name}</p>
-              <img src={logement.host.picture} alt={logement.host.name} />
-            </div>
-            <div className="rateLogement">
-              <Rate numberOfStars={logement.rating} />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="dropLogement">
+      <section className="dropLogement">
         <DropDown title={"Description"} content={logement.description} />
         <DropDown title={"Equipements"} content={logement.equipments} />
-      </div>
-    </main> */
+      </section>
+    </main>
   );
 }

@@ -20,6 +20,12 @@
 @media screen and (max-width: 768px) {
   .tagName {
     height: 18px;
+    font-size: 10px;
     align-items: center;
+  }
+  .tagText {
+    line-height: 14px;
+    white-space: nowrap;
+    padding: 0 10px;
   }
 }

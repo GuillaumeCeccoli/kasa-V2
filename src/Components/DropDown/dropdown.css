@@ -18,6 +18,7 @@
   color: #ffffff;
   font-size: 18px;
   font-weight: 500;
+  margin: 0 1%;
 }
 
 .headingDrop img {
@@ -100,5 +101,6 @@
 
   .headingDrop img {
     height: 9px;
+    margin-right: -8px;
   }
 }

@@ -4,6 +4,7 @@
 
 @media screen and (max-width: 768px) {
   .starIcon {
-    padding: 0;
+    padding: 0 5px;
+    height: 13px;
   }
 }

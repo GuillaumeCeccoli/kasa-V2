@@ -1,10 +1,17 @@
 .logementContainer {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.carousselBanner {
+  width: 100%;
 }
 .informations {
   width: 86%;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 .logeTitle {
   margin: 30px 0 0 0;
@@ -21,4 +28,75 @@
   display: flex;
   flex-direction: row;
   margin: 20px -10px;
+}
+.rate {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 20%;
+  left: 85%;
+}
+.rateDetails {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.rateText {
+  color: #ff6060;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  width: 50%;
+  padding-right: 5px;
+  text-align: right;
+}
+.rateImg {
+  height: 64px;
+  width: 64px;
+  border-radius: 32px;
+}
+.starsRating {
+  position: absolute;
+  width: 250px;
+  top: 110%;
+  right: -22%;
+}
+.dropLogement {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 86%;
+  padding-bottom: 20px;
+}
+.dropLogement .dropDown {
+  width: 45%;
+}
+
+@media screen and (max-width: 768px) {
+  .informations {
+    flex-direction: column;
+  }
+  .logeTitle {
+    font-size: 18px;
+    margin-top: 15px;
+  }
+  .logeLocation {
+    font-size: 14px;
+  }
+  .rateText {
+    font-size: 12px;
+    line-height: 17px;
+  }
+  .rateImg {
+    height: 32px;
+    width: 32px;
+  }
+  .dropLogement {
+    flex-direction: column;
+    margin-top: 45px;
+    width: 100%;
+  }
+  .dropLogement .dropDown {
+    width: 86%;
+  }
 }
