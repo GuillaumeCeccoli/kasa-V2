@@ -4,8 +4,8 @@ function getAllLogements() {
   return logements;
 }
 
-function oneLogement(id) {
-  return logements.find((logement) => logement.id === id);
-}
+const oneLogement = async (id) => {
+  return await logements.find((logement) => logement.id === id);
+};
 
 export { getAllLogements, oneLogement };
