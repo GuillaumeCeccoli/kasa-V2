@@ -1,15 +1,24 @@
-.profileLogement {
-  display: flex;
-  margin: 30px auto;
+.logementContainer {
   width: 100%;
 }
-.profileDetailLogement {
+.informations {
+  width: 86%;
+  display: flex;
+  flex-direction: column;
+}
+.logeTitle {
+  margin: 30px 0 0 0;
+  color: #ff6060;
+  font-weight: 500;
+  font-size: 36px;
+}
+.logeLocation {
+  margin: 10px 0 0 0;
+  color: #ff6060;
+  font-size: 18px;
+}
+.logeTag {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-}
-.profileTitle {
-  color: #ff6060;
-  font-size: 36px;
-  font-weight: 500;
+  margin: 20px -10px;
 }

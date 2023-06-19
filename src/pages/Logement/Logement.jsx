@@ -30,7 +30,30 @@ export default function Logement() {
   }
 
   return (
-    <main className="detailLogement">
+    <main className="logementContainer">
+      <section className="carousselBanner">
+        <Caroussel pictures={logement.pictures} altTxt={logement.title} />
+      </section>
+      <section className="informations">
+        <h2 className="logeTitle">{logement.title}</h2>
+        <p className="logeLocation">{logement.location}</p>
+        <div className="logeTag">
+          {logement.tags.map((tag, id) => {
+            return <Tag tag={tag} key={id} />;
+          })}
+        </div>
+        <div className="rate">
+          <div className="nameAndPicture">
+            <p>{logement.host.name}</p>
+            <img src={logement.host.picture} alt={logement.host.name} />
+          </div>
+          <div className="starsRating">
+            <Rate numberOfStars={logement.rating} />
+          </div>
+        </div>
+      </section>
+    </main>
+    /*     <main className="detailLogement">
       <div className="carousselBanner">
         <Caroussel pictures={logement.pictures} altTxt={logement.title} />
       </div>
@@ -58,6 +81,6 @@ export default function Logement() {
         <DropDown title={"Description"} content={logement.description} />
         <DropDown title={"Equipements"} content={logement.equipments} />
       </div>
-    </main>
+    </main> */
   );
 }
