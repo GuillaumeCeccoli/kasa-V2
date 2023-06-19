@@ -36,8 +36,8 @@ export default function Logement() {
       </div>
       <div className="profileLogement">
         <div className="profileDetailLogement">
-          <h2>{logement.title}</h2>
-          <p>{logement.location}</p>
+          <h2 className="profileTitle">{logement.title}</h2>
+          <p className="profileLocation">{logement.location}</p>
           <div className="profileTagLogement">
             {logement.tags.map((tag, id) => {
               return <Tag tag={tag} key={id} />;

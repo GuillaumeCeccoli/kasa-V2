@@ -1,0 +1,19 @@
+.detailLogement {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.carousselBanner {
+  width: 100%;
+}
+.profileLogement {
+  display: flex;
+  justify-content: space-between;
+}
+.profileDetailLogement {
+  margin: 20px;
+}
+.profileTitle {
+  font-size: 36px;
+  color: #ff6060;
+}
