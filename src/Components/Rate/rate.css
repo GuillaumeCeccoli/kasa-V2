@@ -1,9 +1,8 @@
 .star {
-  width: 250px;
   margin: 0;
 }
 .starIcon {
-  padding: 9px;
+  padding: 5%;
 }
 
 @media screen and (max-width: 768px) {
