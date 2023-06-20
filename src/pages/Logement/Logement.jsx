@@ -34,13 +34,15 @@ export default function Logement() {
       <section className="carousselBanner">
         <Caroussel pictures={logement.pictures} altTxt={logement.title} />
       </section>
-      <section className="informations">
-        <h2 className="logeTitle">{logement.title}</h2>
-        <p className="logeLocation">{logement.location}</p>
-        <div className="logeTag">
-          {logement.tags.map((tag, id) => {
-            return <Tag tag={tag} key={id} />;
-          })}
+      <section className="infosContainer">
+        <div className="informations">
+          <h2 className="logeTitle">{logement.title}</h2>
+          <p className="logeLocation">{logement.location}</p>
+          <div className="logeTag">
+            {logement.tags.map((tag, id) => {
+              return <Tag tag={tag} key={id} />;
+            })}
+          </div>
         </div>
         <div className="rate">
           <div className="rateDetails">
