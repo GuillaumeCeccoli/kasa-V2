@@ -14,16 +14,23 @@ export default function Logement() {
   const [load, setLoad] = useState(false);
 
   useEffect(() => {
-    oneLogement(id)
-      .then((data) => {
+    const fetchData = async () => {
+      try {
+        const data = await oneLogement(id);
         setLogement(data);
-        setLoad(true);
-      })
-      .catch((error) => console.log(error));
+        setTimeout(() => {
+          setLoad(true);
+        }, 1000); // Définissez le délai souhaité en millisecondes (dans cet exemple, 2000 ms soit 2 secondes)
+      } catch (error) {
+        console.log(error);
+      }
+    };
+
+    fetchData();
   }, [id]);
 
   if (!load) {
-    return <div>Chargement en cours</div>;
+    return <div className="loader"></div>;
   }
   if (!logement) {
     return <Error />;

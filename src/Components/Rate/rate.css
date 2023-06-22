@@ -1,11 +1,14 @@
 .star {
-  margin: 0;
+  margin: 0 10px;
 }
 .starIcon {
   padding: 5%;
 }
 
 @media screen and (max-width: 768px) {
+  .star {
+    margin: 0;
+  }
   .starIcon {
     padding: 0 5px;
     height: 13px;
