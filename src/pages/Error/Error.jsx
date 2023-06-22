@@ -1,8 +1,12 @@
 import React from "react";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./error.css";
 
 export default function Error() {
+  useEffect(() => {
+    document.title = `Oups ! Erreur !`;
+  });
   return (
     <div className="errorContain">
       <h1 className="errorNumber">404</h1>

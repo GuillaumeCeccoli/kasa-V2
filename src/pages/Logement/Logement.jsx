@@ -20,7 +20,7 @@ export default function Logement() {
         setLogement(data);
         setTimeout(() => {
           setLoad(true);
-        }, 1000); // Définissez le délai souhaité en millisecondes (dans cet exemple, 2000 ms soit 2 secondes)
+        }, 1000);
       } catch (error) {
         console.log(error);
       }
@@ -28,6 +28,12 @@ export default function Logement() {
 
     fetchData();
   }, [id]);
+
+  useEffect(() => {
+    if (load && logement) {
+      document.title = `KASA - ${logement.title}`;
+    }
+  }, [load, logement]);
 
   if (!load) {
     return <div className="loader"></div>;
