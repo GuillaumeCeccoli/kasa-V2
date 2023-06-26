@@ -12,8 +12,6 @@ export default function Router() {
     <Routes>
       <Route element={<Layout />}>
         <Route index element={<Home />} />
-        {/* On définit la page par défaut */}
-        <Route index element={<Home />} />
 
         {/* On définit nos routes ci-dessous */}
         <Route path="/home" element={<Home />} />
