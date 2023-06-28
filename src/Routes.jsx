@@ -11,6 +11,7 @@ export default function Router() {
   return (
     <Routes>
       <Route element={<Layout />}>
+        {/* On définit notre page par défaut */}
         <Route index element={<Navigate to="/home" replace={true} />} />
 
         {/* On définit nos routes ci-dessous */}
