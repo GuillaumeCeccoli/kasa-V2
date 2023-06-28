@@ -11,7 +11,7 @@ export default function Banner() {
   // En fonction de celle-ci, on change l'image de la banière
   // On retire le texte sur la page A propos
   function getBannerImg() {
-    return location.pathname === "/"
+    return location.pathname === "/home"
       ? { image: bannerImage, showText: true }
       : location.pathname === "/apropos"
       ? { image: aboutImage, showText: false }

@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 
 import Home from "./pages/Home/Home";
 import Layout from "./pages/Layout";
@@ -11,7 +11,7 @@ export default function Router() {
   return (
     <Routes>
       <Route element={<Layout />}>
-        <Route index element={<Home />} />
+        <Route index element={<Navigate to="/home" replace={true} />} />
 
         {/* On définit nos routes ci-dessous */}
         <Route path="/home" element={<Home />} />

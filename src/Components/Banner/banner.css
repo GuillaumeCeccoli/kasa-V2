@@ -1,5 +1,5 @@
 .banner {
-  max-width: 86%;
+  max-width: 85.9%;
   height: 223px;
   display: flex;
   justify-content: center;
@@ -8,7 +8,6 @@
   overflow: hidden;
   background-color: black;
   margin: 20px auto;
-  position: relative;
 }
 
 .bimage {
