@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import logo from "../../assets/LOGO.svg";
 import "./header.css";
 
@@ -11,20 +11,20 @@ export default function Header() {
       <nav>
         <img src={logo} alt="Logo orange" />
         <div className="navbar">
-          <Link
+          <NavLink
             to="/home"
             className={`home ${location.pathname === "/home" ? "active" : ""}`}
           >
             Accueil
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="/apropos"
             className={`about ${
               location.pathname === "/apropos" ? "active" : ""
             }`}
           >
             A propos
-          </Link>
+          </NavLink>
         </div>
       </nav>
     </header>

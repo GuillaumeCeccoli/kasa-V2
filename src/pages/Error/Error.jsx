@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import "./error.css";
 
 export default function Error() {
+  // On modifie l'onglet.
   useEffect(() => {
     document.title = `Oups ! Erreur !`;
   });
@@ -13,7 +14,7 @@ export default function Error() {
       <p className="errorText">
         Oups! La page que <span>vous demandez n'existe pas.</span>
       </p>
-      <Link className="returnHome" to="/">
+      <Link className="returnHome" to="/home">
         Retourner sur la page d'accueil
       </Link>
     </div>

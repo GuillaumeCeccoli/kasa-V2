@@ -5,6 +5,7 @@ import Card from "../../Components/Card/Card";
 import { getAllLogements } from "../../datas/api";
 
 export default function Home() {
+  // Modifie l'onglet
   useEffect(() => {
     document.title = `KASA - Accueil`;
   });
@@ -13,7 +14,8 @@ export default function Home() {
       <div className="homepagebanner">
         <Banner />
       </div>
-      <div className="cardLogement">
+      <section className="cardLogement">
+        {/* Insertion des cartes logements */}
         {getAllLogements().map((logement) => {
           return (
             <Card
@@ -24,7 +26,7 @@ export default function Home() {
             />
           );
         })}
-      </div>
+      </section>
     </main>
   );
 }

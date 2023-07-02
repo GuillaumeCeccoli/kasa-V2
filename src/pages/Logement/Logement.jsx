@@ -13,6 +13,7 @@ export default function Logement() {
   const [logement, setLogement] = useState({});
   const [load, setLoad] = useState(false);
 
+  // On récupère les données à partir de la fonction oneLogement
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -29,6 +30,7 @@ export default function Logement() {
     fetchData();
   }, [id]);
 
+  // On modifie l'onglet en fonction du logement
   useEffect(() => {
     if (load && logement) {
       document.title = `KASA - ${logement.title}`;

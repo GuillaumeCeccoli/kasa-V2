@@ -6,6 +6,7 @@ import DropDown from "../../Components/DropDown/DropDown";
 import "./Apropos.css";
 
 export default function Apropos() {
+  // On modifie l'onglet
   useEffect(() => {
     document.title = `KASA - A propos`;
   });

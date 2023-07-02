@@ -20,7 +20,7 @@ export default function Caroussel({ pictures }) {
   }
 
   return (
-    <div className="slideShowContent">
+    <article className="slideShowContent">
       <img
         className="imgSlideShowContent"
         src={pictures[currentIndex]}
@@ -47,6 +47,6 @@ export default function Caroussel({ pictures }) {
           {currentIndex + 1}/{pictures.length}
         </p>
       </div>
-    </div>
+    </article>
   );
 }
